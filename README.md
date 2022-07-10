@@ -14,11 +14,11 @@ Access control vulnerability
 
 # DESCRIPTION
 Since in [ERC-721](https://eips.ethereum.org/EIPS/eip-721) based NFT contract, when the contract executes the functions responsible for transferring NFT, such as 
-$transferFrom(address\ \_from, address\ \_to, uint256\ \_tokenId)$ or 
-$safeTransferFrom(address\ \_from, address\ \_to, uint256\ \_tokenId)$,
+$transferFrom(address \_from, address \_to, uint256 \_tokenId)$ or 
+$safeTransferFrom(address \_from, address \_to, uint256 \_tokenId)$,
 the contract will transfer the NFT whose ID is $\_tokenId$ from account $\_from$ to account $\_to$.
 In addition, these functions should emit the specific event 
-$Transfer(address\ \_from, address\ \_to, uint256\ \_tokenId)$ 
+$Transfer(address \_from, address \_to, uint256 \_tokenId)$ 
 to blockchain system, which enables the off-chain applications (such as NFT market, DApp) to perceive the transfer behaviour of NFT and synchronize it from blockchain. For example, the emitted event will be displayed in the market to inform user "the NFT whose ID is $\_tokenId$ is transfered from $\_from$ to $\_to$". 
 For example, in the [page](https://opensea.io/assets/ethereum/0xf883ab97ed3d5a9af062a65b6d4437ea015efd8a/644), we can find the event displayed in the Item Activity tab.
 
@@ -30,8 +30,8 @@ I also provide a PoC to reproduce this attack by deploying the same contract on 
 ```
 $ git clone https://github.com/MacherCS/CVE_Evoh_Contract.git
 $ cd CVE_Evoh_Contract
-$ docker build -t machercs/ganache:v1 .
-$ docker run --network host -it machercs/ganache:v1
+$ sudo docker build -t machercs/ganache:v1 .
+$ sudo docker run --network host -it machercs/ganache:v1
 ```
 
 2. exploit the vulnerability and emit wrong event to announce fake transfer.
@@ -82,6 +82,6 @@ $ docker run --network host -it machercs/ganache:v1
 [+] The last event records the NFT 0 is transferred from Alice to Mike (instead of from Bob to Mike).
 ```
 
-#Additional explanation
+# Additional explanation
 For the detail explanation of the exploit, please refer to the annotation of *poc.js* file.
 The content of *evoh-erc721-master* folder is the source code of `EvohClaimable` contract.

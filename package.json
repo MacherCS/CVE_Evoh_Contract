@@ -1,0 +1,25 @@
+{
+  "name": "CVE_Evoh_Contract",
+  "version": "1.0.0",
+  "description": "These are the materials about the vulnerability of Evoh NFT contract",
+  "main": "poc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacherCS/CVE_Evoh_Contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacherCS/CVE_Evoh_Contract/issues"
+  },
+  "homepage": "https://github.com/MacherCS/CVE_Evoh_Contract#readme",
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.2",
+    "keccak256": "^1.0.6",
+    "web3": "^1.7.4"
+  }
+}
