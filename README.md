@@ -7,7 +7,7 @@ These are the materials about the vulnerability of Evoh NFT contract
 This contract is responsible for managing the expensive NFTs (Evoh Llama Frens), such as minting them, transfering them, etc.. These NFTs are sold on the famous NFT market Opensea [here](https://opensea.io/collection/evoh-llama-frens), and the total volume has been 39 ETH ($47435.50 USD) at the time when I write this document. This NFT project is still active now.
 
 # Version
-This vulnerability is related to the latest version of this smart contract. The information The information of the deployed contract is in https://etherscan.io/address/0xf883ab97ed3d5a9af062a65b6d4437ea015efd8a.
+This vulnerability is related to the latest version of this smart contract. The sha256 hash code of the smart contract is fa2084d5abca91a62ed1d2f1cad3ec318e6a9a2d7f1510a00d898737b05f48ae. Check it in the information of the deployed contract in https://etherscan.io/address/0xf883ab97ed3d5a9af062a65b6d4437ea015efd8a.
 
 # PROBLEM TYPE
 Access control vulnerability
