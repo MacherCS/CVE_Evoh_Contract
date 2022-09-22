@@ -1,6 +1,9 @@
 # CVE_Evoh_Contract
 These are the materials about the vulnerability of Evoh NFT contract
 
+# CVE-ID
+CVE-2022-35621
+
 # PRODUCT
 `EvohClaimable` is a public smart contract running in the [Ethereum blockchain](https://ethereum.org/en/). The source code of this contract is published in https://github.com/evoh-nft/evoh-erc721 by its developer. The information of the deployed contract is in https://etherscan.io/address/0xf883ab97ed3d5a9af062a65b6d4437ea015efd8a.
 
